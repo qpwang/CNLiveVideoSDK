@@ -11,16 +11,16 @@
 @protocol CNLiveActivityViewDelegate <NSObject>
 
 //认证失败
-- (void)authField:(NSDictionary *)error;
+- (void)CNLiveActivityViewAuthFailed:(NSDictionary *)error;
 
 //播放结束或者失败原因
-- (void)playErrorInfo:(NSDictionary *)info;
+- (void)CNLiveActivityViewPlayErrorInfo:(NSDictionary *)info;
 
 //点击返回按钮(竖屏调用，当该方法调用时会销毁播放器。横屏点击将返回竖屏，不会调用代理)
-- (void)backAction;
+- (void)CNLiveActivityViewBackAction;
 
 //点击分享按钮
-- (void)shareAction;
+- (void)CNLiveActivityViewShareAction;
 
 @end
 
