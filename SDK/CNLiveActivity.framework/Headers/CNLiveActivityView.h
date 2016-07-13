@@ -33,7 +33,7 @@
 
 @interface CNLiveActivityView : UIView
 
-@property (nonatomic, strong)id<CNLiveActivityViewDelegate> delegate;
+@property (nonatomic, weak)id<CNLiveActivityViewDelegate> delegate;
 
 /*      集成视频播放和聊天室
  *
@@ -43,10 +43,13 @@
  * nickName           在聊天室中使用的昵称
  *
  */
-- (instancetype)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame
                     channelId:(NSString *)channelId
                         sp_id:(NSString *)sp_id
                        sp_key:(NSString *)sp_key
                      nickName:(NSString *)nick;
+
+//退出
+- (void)CNLiveActivityViewExit;
 
 @end
