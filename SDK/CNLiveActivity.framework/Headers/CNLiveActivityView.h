@@ -37,17 +37,17 @@
 
 /*      集成视频播放和聊天室
  *
- * channelId          节目Id
+ * customID           活动Id
  * sp_id              通过网站申请得到的sp_id
  * sp_key             通过网站申请得到的sp_key
  * nickName           在聊天室中使用的昵称
  *
  */
 - (id)initWithFrame:(CGRect)frame
-                    channelId:(NSString *)channelId
-                        sp_id:(NSString *)sp_id
-                       sp_key:(NSString *)sp_key
-                     nickName:(NSString *)nick;
+          channelId:(NSString *)channelId
+              sp_id:(NSString *)sp_id
+             sp_key:(NSString *)sp_key
+           nickName:(NSString *)nick;
 
 //退出
 - (void)CNLiveActivityViewExit;
