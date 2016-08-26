@@ -25,6 +25,14 @@
  */
 - (void)initializeErrorMessage:(NSString *)errorMessage;
 
+/* 连接聊天室失败，或聊天室断开连接
+ *
+ * SDK自动展示重连的UI
+ * 有可能是传入参数错误，需检查传入的 appId appKey roomId 三者是否匹配
+ *
+ */
+- (void)chatroomConnectFaild:(NSDictionary *)error;
+
 /**
  *  退出
  */

@@ -40,7 +40,15 @@ typedef NS_ENUM (NSUInteger, CNLiveLivePlayerButtonClickActionOptions) {
  * 并传入结束页面需要用到的数据
  *
  */
-- (void)CNLiveActivityViewPlayErrorInfo:(NSDictionary *)info;
+- (void)CNLiveLivePlayerViewPlayErrorInfo:(NSDictionary *)info;
+
+/* 连接聊天室失败，或聊天室断开连接
+ *
+ * SDK自动展示重连的UI
+ * 有可能是传入参数错误，需检查传入的 appId appKey roomId 三者是否匹配
+ *
+ */
+- (void)chatroomConnectFaild:(NSDictionary *)error;
 
 //点击按钮的回调
 - (void)buttonClickOptions:(CNLiveLivePlayerButtonClickActionOptions)options;

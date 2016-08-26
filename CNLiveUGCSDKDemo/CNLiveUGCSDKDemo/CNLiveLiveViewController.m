@@ -30,8 +30,13 @@
     [self.view addSubview:_livePlayerView];
 }
 
-- (void)CNLiveActivityViewPlayErrorInfo:(NSDictionary *)info
+- (void)CNLiveLivePlayerViewPlayErrorInfo:(NSDictionary *)info
 {
+    //如果直播已结束，显示结束页
+    [_livePlayerView showEndViewWithWatchAudience:@"524352" buyAudience:@"532522" filmName:@"月满轩尼诗"];
+    
+    //直播未结束，显示重试
+//    [_livePlayerView showLoadView];
     NSLog(@"%@", info);
 }
 

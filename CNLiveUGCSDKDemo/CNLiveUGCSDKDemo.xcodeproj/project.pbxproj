@@ -17,8 +17,9 @@
 		324CE8AB1D6EA32B0039EA62 /* CNLiveStreamerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324CE8A71D6EA32B0039EA62 /* CNLiveStreamerViewController.m */; };
 		324CE8AC1D6EA32B0039EA62 /* CNLiveVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324CE8A91D6EA32B0039EA62 /* CNLiveVideoViewController.m */; };
 		324CE8BA1D6EA9A00039EA62 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 324CE8B91D6EA9A00039EA62 /* resource.bundle */; };
-		324CE8C11D6EAD750039EA62 /* CNLiveUGC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324CE8BF1D6EAD700039EA62 /* CNLiveUGC.framework */; };
-		324CE8C21D6EAD750039EA62 /* CNLiveUGC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 324CE8BF1D6EAD700039EA62 /* CNLiveUGC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		326675891D701F4800B2AFF6 /* CNLiveUGC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326675881D701F4800B2AFF6 /* CNLiveUGC.framework */; };
+		3266758B1D701F5100B2AFF6 /* CNLiveUGC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 326675881D701F4800B2AFF6 /* CNLiveUGC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B92A65F1D702C9800350F19 /* CNLiveNormalLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B92A65E1D702C9800350F19 /* CNLiveNormalLiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				324CE8C21D6EAD750039EA62 /* CNLiveUGC.framework in Embed Frameworks */,
+				3266758B1D701F5100B2AFF6 /* CNLiveUGC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +54,9 @@
 		324CE8A81D6EA32B0039EA62 /* CNLiveVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveVideoViewController.h; sourceTree = "<group>"; };
 		324CE8A91D6EA32B0039EA62 /* CNLiveVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveVideoViewController.m; sourceTree = "<group>"; };
 		324CE8B91D6EA9A00039EA62 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = resource.bundle; path = CNLiveUGCSDKDemo/resource.bundle; sourceTree = "<group>"; };
-		324CE8BF1D6EAD700039EA62 /* CNLiveUGC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CNLiveUGC.framework; path = CNLiveUGCSDKDemo/CNLiveUGC.framework; sourceTree = "<group>"; };
+		326675881D701F4800B2AFF6 /* CNLiveUGC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CNLiveUGC.framework; path = CNLiveUGCSDKDemo/CNLiveUGC.framework; sourceTree = "<group>"; };
+		5B92A65D1D702C9800350F19 /* CNLiveNormalLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveNormalLiveViewController.h; sourceTree = "<group>"; };
+		5B92A65E1D702C9800350F19 /* CNLiveNormalLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveNormalLiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324CE8C11D6EAD750039EA62 /* CNLiveUGC.framework in Frameworks */,
+				326675891D701F4800B2AFF6 /* CNLiveUGC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +74,7 @@
 		324CE8811D6EA3120039EA62 = {
 			isa = PBXGroup;
 			children = (
-				324CE8BF1D6EAD700039EA62 /* CNLiveUGC.framework */,
+				326675881D701F4800B2AFF6 /* CNLiveUGC.framework */,
 				324CE8B91D6EA9A00039EA62 /* resource.bundle */,
 				324CE88C1D6EA3130039EA62 /* CNLiveUGCSDKDemo */,
 				324CE88B1D6EA3120039EA62 /* Products */,
@@ -93,6 +96,8 @@
 				324CE8911D6EA3140039EA62 /* AppDelegate.m */,
 				324CE8931D6EA3140039EA62 /* ViewController.h */,
 				324CE8941D6EA3140039EA62 /* ViewController.m */,
+				5B92A65D1D702C9800350F19 /* CNLiveNormalLiveViewController.h */,
+				5B92A65E1D702C9800350F19 /* CNLiveNormalLiveViewController.m */,
 				324CE8A41D6EA32B0039EA62 /* CNLiveLiveViewController.h */,
 				324CE8A51D6EA32B0039EA62 /* CNLiveLiveViewController.m */,
 				324CE8A61D6EA32B0039EA62 /* CNLiveStreamerViewController.h */,
@@ -188,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B92A65F1D702C9800350F19 /* CNLiveNormalLiveViewController.m in Sources */,
 				324CE8951D6EA3140039EA62 /* ViewController.m in Sources */,
 				324CE8AC1D6EA32B0039EA62 /* CNLiveVideoViewController.m in Sources */,
 				324CE8AA1D6EA32B0039EA62 /* CNLiveLiveViewController.m in Sources */,
@@ -354,6 +360,7 @@
 				324CE8A31D6EA3140039EA62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

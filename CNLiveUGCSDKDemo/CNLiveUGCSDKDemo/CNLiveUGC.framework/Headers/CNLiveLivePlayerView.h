@@ -34,13 +34,22 @@ typedef NS_ENUM (NSUInteger, CNLiveLivePlayerButtonClickActionOptions) {
 /* 接收到视频播放失败的回调
  *
  * info               视频播放失败的原因 errorCode是MPMovieFinishReason的枚举
+ *
  * 在接收到失败的回调后，判断活动是否结束
  * 未结束调用 showLoadView 方法
  * 已结束调用 showEndViewWithWatchAudience:(NSString *)watch buyAudience:(NSString *)buy filmName:(NSString *)filmName
  * 并传入结束页面需要用到的数据
  *
  */
-- (void)CNLiveActivityViewPlayErrorInfo:(NSDictionary *)info;
+- (void)CNLiveLivePlayerViewPlayErrorInfo:(NSDictionary *)info;
+
+/* 连接聊天室失败，或聊天室断开连接
+ *
+ * SDK自动展示重连的UI
+ * 有可能是传入参数错误，需检查传入的 appId appKey roomId 三者是否匹配
+ *
+ */
+- (void)chatroomConnectFaild:(NSDictionary *)error;
 
 //点击按钮的回调
 - (void)buttonClickOptions:(CNLiveLivePlayerButtonClickActionOptions)options;
